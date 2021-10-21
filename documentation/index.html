@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content=""><meta name=”robots” content=”noindex,nofollow”>
+
+    <title>Geo POS | Documentation by UltimateKode</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <div class="container">
+
+        <section id="top" class="section docs-heading">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="big-title text-center">
+                        <h1>Geo Point Of Sale and CRM Software</h1>
+                        <p class="lead">Documentation version 5.0 </p>
+                    </div>
+                    <!-- end title -->
+                </div>
+                <!-- end 12 -->
+            </div>
+            <!-- end row -->
+
+            <hr>
+
+        </section>
+        <!-- end section -->
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200"
+                     role="navigation">
+                    <ul class="nav">
+                        <li><a href="#line1">Auto Installation</a></li>
+                        <li><a href="#line2">App Settings</a></li>
+                        <li><a href="#line3">Employee Management </a></li>
+                        <li><a href="#line4">Payment Gateway</a></li>
+                        <li><a href="#line5">Sales : Invoices , Quotes & Recurring</a></li>
+                        <li><a href="#line6">Stock Management </a></li>
+                        <li><a href="#line7">CRM : Customers, Suppliers</a></li>
+                        <li><a href="#line7s">ACCOUNTS & BALANCE</a></li>
+                        <li><a href="#line7p">Export Data</a>
+                        <li><a href="#line7r">REST API</a>
+                        <li><a href="#line7corn">Cron Jobs</a>
+                        <li><a href="#line7thermal">Thermal POS Printer</a>
+                        <li><a href="#line7e">Email Setup & Template</a>
+                        <li><a href="#line8">Support Desk</a></li>
+                        <li><a href="#line9">Files & Credits</a></li>
+                        <li><a href="#line10">Version History</a></li>
+                        <li><a href="#line11">Application Flow Chart</a></li>
+                        <li><a href="#line12">Model-View-Controller</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-9">
+                <section class="welcome">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Introduction
+                                <hr>
+                            </h2>
+                            <div class="row">
+
+                                <div class="col-md-12 full">
+                                    <div class="intro1">
+                                        <ul>
+                                            <li><strong>Item Name : </strong>Geo POS - Accounting, CRM and CRM Software
+                                            </li>
+                                            <li><strong>Item Version : </strong> v 5.0 +</li>
+                                            <li><strong>Author : </strong> <a
+                                                    href="https://codecanyon.net/user/ultimatekode" target="_blank">UltimateKode</a>
+                                            </li>
+                                            <li><strong>Support : </strong> support@ultimatekode.com</li>
+                                        </ul>
+                                    </div>
+
+                                    <hr>
+                                    <div>
+                                        <p>First of all, Thank you so much for purchasing this application and for being
+                                            my
+                                            loyal customer.
+                                            <strong>You are awesome!</strong>
+                                            <br> You are entitled to get free lifetime updates to this product +
+                                            exceptional support from the author directly.
+                                        </p>
+
+                                        <p>This documentation is to help you regarding each step of usages.
+                                            Please go through the documentation carefully to understand how this
+                                            application is work. PHP, HTML, CSS and MySQL
+                                            knowledge is required to customize this application. You may learn basics <a
+                                                    href="http://www.w3schools.com/" target="_blank">here</a>, <a
+                                                    href="https://developer.mozilla.org/" target="_blank">here</a>. </p>
+
+                                        <h4>Requirements</h4>
+                                        <p>You will need the following requirements to install this application.</p>
+                                        <ol>
+                                            <li>Hosting Account</li>
+                                            <li>FTP Tool to upload files to Server (eg: <a
+                                                    href="https://filezilla-project.org/download.php?type=client"
+                                                    target="_blank">FileZilla</a>)
+                                            </li>
+                                            <li>Web Browser to run the application (eg: Google Chrome or Mozilla
+                                                Firefox)
+                                            </li>
+
+                                            <li>Server should be have at least PHP 5.6 or greater and MySQL 5.x
+                                                version
+                                            </li>
+                                        </ol>
+                                        <div class="intro2 clearfix">
+                                            <p><i class="fa fa-exclamation-triangle"></i> Be careful while editing the
+                                                application. If not edited properly, the logical and design layout may
+                                                break completely.
+                                                <br> No support is provided for faulty customization.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- end row -->
+                        </div>
+                    </div>
+                </section>
+
+                <section id="line1" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Getting Started <a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Local XAMPP  Installation</h4><ol>
+                            <li> Install XAMPP - Do not Install in C Drive  </li>
+
+ <li>Open your xampp/htdocs folder </li>
+
+ <li>Empty htdocs folder </li>
+
+ <li>Extract files_to_upload from geo setup to htdocs </li>
+
+ <li>Open XAMPP From Start Menu -> Start Apache and MySQL </li>
+
+ <li>visit localhost/phpmyadmin -> create a database  </li>
+
+ <li> visit localhost/ -> it will start the installation  (database user name is root and password is blank </li></ol>
+
+                             <h4>cPanel  Installation</h4>
+<p><a href="https://www.youtube.com/watch?v=L16y4kFGkeo" rel="nofollow">Watch Installation Video</a></p>
+                            <h4>Generic Server  Installation</h4>
+                            <ol>
+                                <li>Create a MySQL Database in your hosting control panel.</li>
+                                <li>Note down your Database credentials - database host, username, password and database
+                                    name.
+                                </li>
+
+                                <li>Select <strong>files_to_upload</strong> folder content(internal files ad folders)
+                                    and zip it.
+                                    <p><img src="images/i1.png" alt="" class="img-responsive img-thumbnail"></p>
+                                </li>
+                                <li>Upload it (<strong>your_zip</strong>) file to server in desired folder</li>
+                                <li>Now visit to your application in browser with correct address like
+                                    http://www.example.com/application
+                                </li>
+                                <li>Follow on screen steps</li>
+                            </ol>
+                            <p>START<br><img src="images/upload/ins1.png" alt="" class="img-responsive img-thumbnail">
+                            </p>
+                            <p>NEXT<br><img src="images/upload/ins2.png" alt="" class="img-responsive img-thumbnail">
+                            </p>
+                            <p>NEXT<br><img src="images/upload/ins3.png" alt="" class="img-responsive img-thumbnail">
+                            </p>
+                            <p>Finished<br><img src="images/upload/ins4.png" alt=""
+                                                class="img-responsive img-thumbnail"></p>
+
+
+                            <div id="notify" class="alert alert-success">
+                                <h2><i class="fa fa-hand-right"></i>After successful login you will redirected to the
+                                    dashboard.</h2>
+                            </div>
+
+                            <p><strong>Please have an overview of dashboard </strong></p>
+                            <p><img src="images/upload/dash.png" alt="" class="img-responsive img-thumbnail"></p>
+
+
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <!-- end section -->
+
+                <section id="line2" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Settings<a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="intro2 clearfix">
+                        <p><i class="fa fa-user"></i> In this section you can manage following options .
+                        </p>
+
+                    </div>
+                    <ol>
+                        <li><strong>Company Settings</strong>
+                            <p>Company information and logo for invoices and other type of receipts.<br><img
+                                    src="images/s1.png" class="img-responsive img-thumbnail"></p></li>
+                        <li><strong>Billing & Language Settings</strong>
+                            <p>TAX, TAX ID, Langauage and other invoicing related settings<br><img src="images/s2.png"
+                                                                                                   class="img-responsive img-thumbnail">
+                            </p></li>
+
+                        <li><strong>Currency</strong>
+                            <p>Company Currency Format settings like Decimal Separator,Thousand Separator etc<br><img
+                                    src="images/s3.png" class="img-responsive img-thumbnail"></p></li>
+
+                        <li><strong>Date & Time Format</strong>
+                            <p>Date & Time Format settings<br><img src="images/s4.png"
+                                                                   class="img-responsive img-thumbnail"></p></li>
+
+                        <li><strong>Transaction Categories</strong>
+                            <p>Transaction Categories are helpful to sort transactions in categories<br><img
+                                    src="images/s5.png" class="img-responsive img-thumbnail"></p></li>
+
+
+                        <li><strong>Set Goals</strong>
+                            <p>You can set your goals here it will display on dashboard.<br><img src="images/s6.png"
+                                                                                                 class="img-responsive img-thumbnail">
+                            </p></li>
+                        <li><strong>REST API</strong>
+                            <p> One of the most popular types of API is REST or, as they're sometimes known, RESTful
+                                APIs. REST or RESTful APIs were designed to take advantage of existing protocols.
+                                Application is shipped with ready to use RestFul Service. You can write code in rest
+                                section and link it with other applications. <a href="#line7r"><strong>More
+                                    Here</strong></a><br><img src="images/s7.png" class="img-responsive img-thumbnail">
+                            </p></li>
+                        <li><strong>Email Config</strong>
+                            <p>Geo POS utilize SMTP protocol to send its all emails including (invoice notifications,
+                                user password reset). You must configure SMTP correctly to send emails. Please do not
+                                send support requests regarding SMTP configuration. It has perfectly tested SMTP
+                                integration so check your server credentials.<br><img src="images/s8.png"
+                                                                                      class="img-responsive img-thumbnail">
+                            </p></li>
+                    </ol>
+
+
+                    <hr>
+
+
+                </section>
+                <!-- end section -->
+
+                <section id="line3" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Employee Management <a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                    <div class="intro2 clearfix">
+                        <p><i class="fa fa-cog"></i> In this section you can manage your company employee and their
+                            roles. To login employee email and password are required.</p>
+
+
+                    </div>
+                    <h3>Employee Role Definition</h3>
+                    <ol>
+                        <li>BusinessOwner : With this role user can access all setting and section of application.</li>
+                        <li>Business Manager : With this role user can access section of application but not allowed to
+                            mange employee,application settings, payment gateways settings.
+                        </li>
+                        <li>Sales Manager: It can access sales section with stock manager. App Dashboard access is also
+                            disabled for this role.
+                        </li>
+                        <li>Sales Person: Only allowed to access the sales section. App Dashboard access is also
+                            disabled for this role.
+                        </li>
+                        <li>Inventory Manager: Only allowed to access the stock management section. Full App Dashboard
+                            access is disabled for this role.
+                        </li>
+                        <li>Project Manager: Only allowed to access the project management section. Full App Dashboard
+                            access is disabled for this role.
+                        </li>
+                    </ol>
+                    <p><img src="images/upload/s1254.png" alt="" class="img-responsive img-thumbnail"></p>
+
+
+                    <hr>
+
+
+                </section>
+                <!-- end section -->
+
+
+                <section id="line4" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Payment Gateway <a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <p>Application has ready to some popular payment gateways. </p>
+                        <ol>
+                            <li>Stripe</li>
+                            <li>Authorize.Net</li>
+                            <li>Pin Payments</li>
+                            <li>PayPal</li>
+                            <li>SecurePay</li>
+                        </ol>
+                        <p>You can enable or disable these either all or individually. <br>
+                            Enabled gateways will display publicly on invoice payment page where customer can make a
+                            payment. Look at screenshots of public invoice payment page. Please do not send support
+                            requests reagrding Payment Gateway Credentials and configuration. These gateway integration
+                            is perfectly tested so check your Gateway credentials or contact to service provider.</p>
+                        <img src="images/upload/inv_p.png" alt="" class="img-responsive img-thumbnail">
+                        <p>Final Payment Page it will display like this</p>
+                        <img src="images/upload/cardpay.png" alt="" class="img-responsive img-thumbnail">
+
+                        <img src="images/upload/1225.png" alt="" class="img-responsive img-thumbnail">
+
+
+                        <!-- end row -->
+                    </div>
+                </section>
+                <!-- end section -->
+
+
+                <section id="line5" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Sales : POS, Invoices , Quotes & Subscriptions<a href="#top">#back to
+                                top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <p>In sales section you can create invoices, quotes and recurring invoices.</p>
+
+                        <div class="alert alert-danger">
+                            Note: To create an invoice please add a client and some products in stock section. You can
+                            only create invoices of added products. If you put products manually. It will not considered
+                            in invoice. You can change the name of product after selecting it from product list
+                            temporary for that perticular invoice.
+                        </div>
+                        <h4>POS Create - Menu (Sales>POS>New Invoice)</h4>
+                        <p>It will ask you to open teh register before POS Invoice creation.</p><img
+                            src="images/upload/pos1.png" alt="" class="img-responsive img-thumbnail"><br><br><br>
+                        <h4>Standard Invoice Create - Menu (Sales>Sales>New Invoice)</h4><img
+                            src="images/upload/inv_1.png" alt="" class="img-responsive img-thumbnail"><br><br><br>
+
+
+                        After creation of invoice you can view the invoice. Manage invoice actions like edit,
+                        cancel,email, print.
+                        <img src="images/upload/inv_int.png" alt="" class="img-responsive img-thumbnail">
+                        <br>
+                        <h4>Manage Invoices</h4>
+                        <p> Here you can view the invoices history and mange them.</p>
+                        <img src="images/upload/s0132.png" alt="" class="img-responsive img-thumbnail">
+                        <h4>Subscriptions</h4>
+                        <p> Subscriptions is same as other invoices but here invoices will automatically generated. You
+                            need to setup the cron job for automatic invoices</p>
+                        <div class="alert alert-info">
+                            Note: The same guide will applicable for quotes and recurring invoices.
+                        </div>
+
+
+                        <!-- end row -->
+                    </div>
+                </section>
+                <!-- end section -->
+                <section id="line6" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Stock Management <a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+
+
+                        <p>In this section you have to do entry of your all stock. There is a stock tracker added in
+                            application which will provide you stock records.</p>
+                        <div class="alert alert-danger">
+                            Note: In this section at least one product category is required to function properly. Do not
+                            delete all products categories.
+                        </div>
+
+
+                        <img src="images/upload/s0113.png" alt="" class="img-responsive img-thumbnail">
+
+                        <h3>Purchase Order</h3>
+                        <p>This feature is helpful to maintain record of your incoming stock. Additionally you can
+                            forward it your suppliers as an email also. Functionality of this section is similar to the
+                            invoices but it acts opposite to the invoice. </p>
+
+
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <!-- end section -->
+
+                <!-- end section -->
+                <section id="line7" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">CRM : Customers, Suppliers <a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <h3>Customers</h3>
+
+                        <p>Customer Relationship Management section have all customers address, all invoices and money
+                            transactions by the customer. Here you can reset the customer login password.</p>
+
+                        <h3>Customer can login http://yourapplication.com/crm </h3>
+
+                        <img src="images/upload/cust.png" alt="" class="img-responsive img-thumbnail">
+
+                        <h4>Groups</h4>
+                        <p>You can send bulk email to all customer in a group.</p>
+
+                        <h3>Suppliers</h3>
+                        <p> A supplier is required to create a purchase order. We had discussed on purchase orders on
+                            above section.</p>
+
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <!-- end section -->
+                <section id="line7s" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">ACCOUNTS & BALANCE <a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+
+
+                        <p>This section is heart of your business. Here you have to add internal business accounts.
+                            Payments in invoices,purchase orders , income and expenses transactions will automatically
+                            reflected in this section.</p>
+
+                        <img src="images/upload/acc.png" alt="" class="img-responsive img-thumbnail">
+
+
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <!-- end section -->
+
+
+                <section id="line7p" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Export Data<a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+
+
+                        <p>In Export Data Section you can customers,suppliers,transactions and products easily.
+                            Exported date_format is .csv.<br> Additionally, you can backup your whole database also.
+                            <br><img src="images/s10.png" alt="" class="img-responsive img-thumbnail"></p>
+
+
+                    </div>
+                    <!-- end row -->
+
+                </section>
+
+                <section id="line7r" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">REST<a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+
+
+                        <p>Application has pre-installed REST drivers. You can you use the application as per your
+                            requiremnts.</p>
+                        <p>Sample Get function</p>
+
+                        <pre class="brush: html">
+  public function clients_get()
+    {
+
+        $id = $this->get('id');
+
+
+        if ($id === NULL) {
+            $list = $this->restservice->customers();
+
+            if ($list) {
+                // Set the response and exit
+                $this->response($list, REST_Controller::HTTP_OK); // OK (200) being the HTTP response code
+            } else {
+                // Set the response and exit
+                $this->response([
+                    'status' => FALSE,
+                    'message' => 'No users were found'
+                ], REST_Controller::HTTP_NOT_FOUND); // NOT_FOUND (404) being the HTTP response code
+            }
+        }
+
+                                      </pre>
+
+                        <h3>How to enable rest service</h3>
+
+                        <p> To enable rest service you have to generate an api key in settings>REST API section.</p>
+
+                        <h3>Response</h3>
+
+                        <p>Default data response will be in json format</p>
+
+                        <h3>Methods</h3>
+
+                        <p>By deafult some basic functions are added. You can add more methods in
+                            application/controller/Rest.php</p>
+
+                        <strong>Sample POST method</strong>
+
+                        <pre class="brush: html">
+  public function clients_post()
+    {
+
+
+        $id = $this->post('id');
+
+
+        if ($id === NULL) {
+            $list = $this->restservice->customers();
+            // Check if the users data store contains users (in case the database result returns NULL)
+            if ($list) {
+                // Set the response and exit
+                $this->response($list, REST_Controller::HTTP_OK); // OK (200) being the HTTP response code
+            } else {
+                // Set the response and exit
+                $this->response([
+                    'status' => FALSE,
+                    'message' => 'No users were found'
+                ], REST_Controller::HTTP_NOT_FOUND); // NOT_FOUND (404) being the HTTP response code
+            }
+        }
+
+        // Find and return a single record for a particular user.
+
+        $id = (int)$id;
+
+        // Validate the id.
+        if ($id <= 0) {
+            // Invalid id, set the response and exit.
+            $this->response(NULL, REST_Controller::HTTP_BAD_REQUEST); // BAD_REQUEST (400) being the HTTP response code
+        }
+
+        // Get the user from the array, using the id as key for retrieval.
+        // Usually a model is to be used for this.
+
+        $list = $this->restservice->customers($id);
+
+        if (!empty($list)) {
+            $this->set_response($list[0], REST_Controller::HTTP_OK); // OK (200) being the HTTP response code
+        } else {
+            $this->set_response([
+                'status' => FALSE,
+                'message' => 'User could not be found'
+            ], REST_Controller::HTTP_NOT_FOUND); // NOT_FOUND (404) being the HTTP response code
+        }
+    }
+
+
+                            <!-- end row -->
+                        </pre>
+                    </div>
+                </section>
+
+                <section id="line7corn" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">CRON Jobs<a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+
+
+                        <p>The software utility Cron is a time-based job scheduler in Unix-like computer operating
+                            systems. People who set up and maintain software environments use cron to schedule jobs
+                            (commands or shell scripts) to run periodically at fixed times, dates, or intervals. It
+                            typically automates system maintenance or administration though its general-purpose nature
+                            makes it useful for things like downloading files from the Internet and downloading email at
+                            regular intervals.</p>
+
+                        <p>To create a cron job, perform the following steps:</p>
+                        <p>Select the interval at which you wish to run the cron job from the appropriate menus, or
+                            enter the values in the text boxes.</p>
+                        <p><strong>Common Settings</strong>-This menu allows you to select a commonly-used interval. The
+                            system will configure the appropriate settings in the Minute, Hour, Day, Month, and Weekday
+                            text boxes for you.</p>
+
+                        <p><strong>Minute</strong> - Use this menu to select the number of minutes between each time the
+                            cron job runs, or the minute of each hour on which you wish to run the cron job.</p>
+                        <p><strong>Hour</strong>- Use this menu to select the number of hours between each time the cron
+                            job runs, or the hour of each day on which you wish to run the cron job.</p>
+                        <p><strong>Day</strong> - Use this menu to select the number of days between each time the cron
+                            job runs, or the day of the month on which you wish to run the cron job.</p>
+                        <p><strong>Month</strong>- Use this menu to select the number of months between each time the
+                            cron job runs, or the month of the year in which you wish to run the cron job.</p>
+                        <p><strong>Weekday</strong>- Use this menu to select the days of the week on which you wish to
+                            run the cron job.</p>
+                        <div class="card-block"><h5>Corn Job Management </h5>
+
+                            <hr>
+                            <p>The software utility Cron is a time-based job scheduler. People who set up and maintain
+                                autometed application task use cron to schedule jobs to run periodically at fixed times,
+                                dates, or intervals. Recommended corn job scheduling is in midnight.</p><br><a
+                                    class="btn btn-primary btn-sm rounded">
+                                Go to settings> Autometic Corn Jobs
+                            </a>
+                            <p></p>
+                            <h4 class="text-gray-dark">Example Token is 45405689</h4>
+
+                            <hr>
+                            <p class="text-bold-500"> Job Subscription Invoices Auto Management URL is</p>
+                            <pre class="card-block card">WGET http://example.com/cloud_invoice/cornjob/subscription?token=45405689</pre>
+                            <pre class="card-block card">GET http://example.com/cloud_invoice/cornjob/subscription?token=45405689</pre>
+                            <hr>
+
+                            <hr>
+                            <p class="text-bold-500">Due Invoices Automatic Email URL is </p>
+                            <pre class="card-block card">GET http://example.com/cloud_invoice/cornjob/due_invoices_email?token=45405689</pre>
+                            <pre class="card-block card">WGET http://example.com/cloud_invoice/cornjob/due_invoices_email?token=45405689</pre>
+
+                            <hr>
+                            <p class="text-bold-500">Automatic Report data update</p>
+                            <p>
+                                <small>This action will update the monthly sales,sold items, total income and expenses
+                                    of past 12 months.
+                                </small>
+                            </p>
+                            <pre class="card-block card">GET http://example.com/cloud_invoice/cronjob/reports?token=45405689</pre>
+                            <pre class="card-block card">WGET http://example.com/cloud_invoice/cronjob/reports?token=45405689</pre>
+                        </div>
+
+                    </div>
+                    <!-- end row -->
+
+                </section>
+
+
+                <section id="line7thermal" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Thermal Printer Config<a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+
+                        <h6>Case 1 : if your printer is connected to direct network OR GeoPOS and printer are on same
+                            machine</h6>
+                         <h6>Case 2 :  Printing on different computer while app host is different (Printing on client
+                            computer while app is at hosting server)</h6>
+                        <p>In this application we have used <a href="https://github.com/mike42/escpos-php">https://github.com/mike42/escpos-php</a>
+                            library This project has included subset of Epson's ESC/POS protocol for thermal receipt
+                            printers. It allows you to generate and print receipts with basic formatting, cutting on a
+                            compatible printer.</p>
+                        <h3>Case 1: if your printer is connected to direct network OR GeoPOS and printer are on same
+                            machine</h3>
+                        <p>This case is applicable <strong>only</strong> if your app and printer is directly connected - like both are on same <strong>local</strong> network. - Printer is USB/Local_Network and app is hosted with localhost on same computer/local_network.  </p>
+                        <p>Please go printer config section</p>
+                        <ul>
+                            <li>1. Add Printer</li>
+                            <li>2. Enter Printer Name it can anything</li>
+                            <li>3. Enter Select Printer Type</li>
+                            <p>1. <strong>File Printer</strong>- use this option if your using standard UNIX/Linux
+                                system<br>Your printer/app should have connected/hosted on the same operating system. Printer Connector
+                                value for this option is generally like
+                            <pre class="card-block card"> Printer Connector : /dev/usb/lp0</pre>
+                            </p>
+                            <p>2. <strong>Network Printer</strong>- use this option if your using a Network connected
+                                Printer<br>Your printer should have a static ip address. Printer Connector value for
+                                this option is generally like
+                            <pre class="card-block card"> Printer Connector : http://10.x.x.x:9100</pre>
+                              <pre class="card-block card"> Printer Connector : http://236.x.x.x:9100</pre>
+                            <p>Class 10.x is related to your private network, it will not work with public hosted app on different server (See Case 2) <br>If your printer is on public network(public ip), it will work with public hosted app on different server</p>
+                            </p>
+                            <p>3. <strong>Windows Printer (USB)</strong>- use this option if your using standard windows
+                                system<br>Your printer/app should have connected/hosted same operating system. Printer Connector
+                                value for this option is generally like
+                            <pre class="card-block card"> Printer Connector : LPT1</pre>
+                              <p> It will not work with public hosted app on different server and printer is connected to a different local computer (See Case 2) </p>
+                            <p>Here 'LPT1' can be your printer's share name -> go to windows printer settings > printer properties > enable sharing (you will get the share name like ESPXYZ)</p>
+                            </p>
+                        </ul>
+                        <h3>Case 2: Printing on different computer while app host is different (Printing on client
+                            computer while app is at hosting server)</h3>
+                        <p>This case is applicable only if your app is hosted on a public hosting server while printer is connected to your local system/computer/network.<strong>This case is applicable for most of USERS.</strong> </p>
+                        <ul>
+                            <li>1. Download webserver - XAMP ... <a href="https://www.apachefriends.org/download.html" target="_blank">Download XAMPP</a> . Install It (Do not install it to C Drive - It may generate sometime file write issues) </li>
+                            <li>2. Download the pos printing server <a
+                                    href="http://www.ultimatekode.com/pos_printer.zip">http://www.ultimatekode.com/pos_printer.zip</a>
+                            </li>
+                            <li>3. <p>For XAMPP Open XAMMP Installation Directory/htdocs Folder</p>Extract downloaded file to <strong>htdocs (yourlocalserver)</strong>/pos_printer</li>
+                            <li>4. Open <strong>htdocs</strong>/pos_printer/config.php</li>
+                            <hr>
+                            <li>5. Check config.php line no 27 , enter your hosted pos app url</li>
+                            <code>$config['app_url'] = 'http://youdomain.com/yourfolder/';</code>
+                            <p>Example http://billing.ultimatekode.com/yourfolder/  - do not forget last '/' slash</p>
+                            <hr>
+                            <li>6. Check config.php <strong>line no 35</strong> , enter your rest key. <br>You can
+                                generate key in GeoPOS>Left Side Menu<br>Settings> REST API
+                            </li>
+                            <code>$config['rest_key'] = 'YOURKEY_HERE';</code>
+                            <hr>
+                            <li>7. Check config.php <strong>line no 50</strong> , enter your printer connection type.
+                                <br>For FilePrintConnector = 'file'<br>
+                                NetworkPrintConnector = 'network'<br>
+                                WindowsPrintConnector (USB) = 'windows'<br>
+                                DummyPrintConnector = 'test'<br><strong>Please enter one value, example for windows
+                                    'windows'</strong></li>
+                            <code>$config['printer_connection'] = 'test';</code>
+                            <hr>
+                            <li>8. <strong>Note: Edit </strong><strong>Only</strong> If you have entered $config['printer_connection'] = 'file'; in
+                                step 7 than please edit line no 64, otherwise skip it. Enter your value example : <i>/dev/usb/lp0</i> - you can it in your terminal
+                                <pre>$config['print_file'] = '/dev/usb/lp0';</pre><br></li>
+                                  <li>9.<strong>Note:</strong> Edit <strong>Only</strong>  If you have entered $config['printer_connection'] =
+                                'network'; in step 7 than please edit line no 67 , otherwise skip it. Enter your local network printer ip
+                                <pre>$config['print_network'] = array("10.x.x.x", 9100);</pre>  if you printer ip is public you can follow CASE 1 </li><br>
+                                  <li>10.<strong>Note:</strong><strong>Edit Only</strong>  If you have entered $config['printer_connection'] =
+                                'windows'; in step 7 than please edit line no 70 . Enter your value for
+                                       <pre>$config['print_windows'] = 'LPT1';</pre><p>Here 'LPT1' can be your printer's share name -> go to windows printer settings > printer properties > enable sharing (you will get the share name like ESPXYZ)</p>
+                            </li>
+							 <li>11. Later go to Geo POS app printer settings> add printer > select REST Based Printer Server  as Printer Type</li>
+
+ <li>11. In the Printer Connector section -  enter http://localhost/pos_printer/index.php</li>
+                             <li>12. In the Business Locations section -  Default</li>
+                             <li>13. In the Printing Mode section -  Basic<br><small> Advance Mode Requires Imagick Extension on ;local host and Hosting server as well.</small></li>
+                              <li>14. in POS Section > Pay+Print Now Button work only for CASE 1</li>
+                        </ul>
+
+                        <br>
+                        <h3>Compatibility</h3>
+
+                        <table class="tbl" cellpadding='5'>
+                            <tbody>
+                            <tr>
+                                <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                <th>Linux&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                <th>Mac&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                <th>Windows&nbsp;&nbsp;</th>
+                            </tr>
+                            <tr>
+                                <th>Ethernet&nbsp;&nbsp;&nbsp;</th>
+                                <td>
+                                    <a href="https://github.com/mike42/escpos-php/tree/master/example/interface/ethernet.php">Yes</a>
+                                </td>
+                                <td>
+                                    <a href="https://github.com/mike42/escpos-php/tree/master/example/interface/ethernet.php">Yes</a>
+                                </td>
+                                <td>
+                                    <a href="https://github.com/mike42/escpos-php/tree/master/example/interface/ethernet.php">Yes</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>USB</th>
+                                <td>
+                                    <a href="https://github.com/mike42/escpos-php/tree/master/example/interface/linux-usb.php">Yes</a>
+                                </td>
+                                <td>Not tested</td>
+                                <td>
+                                    <a href="https://github.com/mike42/escpos-php/tree/master/example/interface/windows-usb.php">Yes</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>USB-serial</th>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th>Serial</th>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th>Parallel</th>
+                                <td>
+                                    <a href="https://github.com/mike42/escpos-php/tree/master/example/interface/windows-lpt.php">Yes</a>
+                                </td>
+                                <td>Not tested</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th>SMB shared</th>
+                                <td>
+                                    <a href="https://github.com/mike42/escpos-php/tree/master/example/interface/smb.php">Yes</a>
+                                </td>
+                                <td>No</td>
+                                <td>
+                                    <a href="https://github.com/mike42/escpos-php/tree/master/example/interface/smb.php">Yes</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>CUPS hosted</th>
+                                <td>
+                                    <a href="https://github.com/mike42/escpos-php/tree/master/example/interface/cups.php">Yes</a>
+                                </td>
+                                <td>
+                                    <a href="https://github.com/mike42/escpos-php/tree/master/example/interface/cups.php">Yes</a>
+                                </td>
+                                <td>No</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>Supported Printers</h3>
+                        <ul>
+
+                            <li>3nStrat POS-08</li>
+                            <li>AURES ODP-333</li>
+                            <li>AURES ODP-500</li>
+                            <li>Bematech-4200-TH</li>
+                            <li>Bematech LR2000E</li>
+                            <li>Bixolon SRP-350III</li>
+                            <li>Black Copper BC-85AC</li>
+                            <li>Citizen CBM1000-II</li>
+                            <li>Citizen CT-S310II</li>
+                            <li>Dapper-Geyi Q583P</li>
+                            <li>Daruma DR800</li>
+                            <li>DR-MP200 (manufacturer unknown)</li>
+                            <li>EPOS TEP 220M</li>
+                            <li>Epson EU-T332C</li>
+                            <li>Epson FX-890 (requires <code>feedForm()</code> to release paper).</li>
+                            <li>Epson TM-T20</li>
+                            <li>Epson TM-T20II</li>
+                            <li>Epson TM-T70</li>
+                            <li>Epson TM-T70II</li>
+                            <li>Epson TM-T81</li>
+                            <li>Epson TM-T82II</li>
+                            <li>Epson TM-T88II</li>
+                            <li>Epson TM-T88III</li>
+                            <li>Epson TM-T88IV</li>
+                            <li>Epson TM-T88V</li>
+                            <li>Epson TM-U220</li>
+                            <li>Epson TM-U295 (requires <code>release()</code> to release slip).</li>
+                            <li>Epson TM-U590 and TM-U590P</li>
+                            <li>Equal (EQ-IT-001) POS-58</li>
+                            <li>Excelvan HOP-E200</li>
+                            <li>Excelvan HOP-E58</li>
+                            <li>Excelvan HOP-E801</li>
+                            <li>Excelvan ZJ-8220</li>
+                            <li>Gainscha GP-5890x (Also marketed as EC Line 5890x)</li>
+                            <li>Gainscha GP-U80300I (Also marketed as gprinter GP-U80300I)</li>
+                            <li>gprinter GP-U80160I</li>
+                            <li>Hasar HTP 250</li>
+                            <li>Metapace T-1</li>
+                            <li>Metapace T-25</li>
+                            <li>Nexa PX700</li>
+                            <li>Nyear NP100</li>
+                            <li>Okipos 80 Plus III</li>
+                            <li>Orient BTP-R580</li>
+                            <li>Partner Tech RP320</li>
+                            <li>P-822D</li>
+                            <li>P85A-401 (make unknown)</li>
+                            <li>Rongta RP326US</li>
+                            <li>Rongta RP58-U</li>
+                            <li>Senor TP-100</li>
+                            <li>SEYPOS PRP-300 (Also marketed as TYSSO PRP-300)</li>
+                            <li>Sicar POS-80</li>
+                            <li>Silicon SP-201 / RP80USE</li>
+                            <li>SPRT SP-POS88V</li>
+                            <li>Star BSC10</li>
+                            <li>Star TSP100 ECO</li>
+                            <li>Star TSP100III FuturePRNT</li>
+                            <li>Star TSP-650</li>
+                            <li>Star TUP-592</li>
+                            <li>Venus V248T</li>
+                            <li>Xprinter F-900</li>
+                            <li>Xprinter XP-365B</li>
+                            <li>Xprinter XP-58 Series</li>
+                            <li>Xprinter XP-80C</li>
+                            <li>Xprinter XP-90</li>
+                            <li>XPrinter XP-Q20011</li>
+                            <li>Xprinter XP-Q800</li>
+                            <li>Zjiang NT-58H</li>
+                            <li>Zjiang ZJ-5870</li>
+                            <li>Zjiang ZJ-5890K</li>
+                            <li>Zjiang ZJ-5890T (Marketed as POS 5890T)</li>
+                            <li>Zjiang ZJ-8220</li>
+                        </ul>
+
+
+                        <hr>
+
+
+                    </div>
+                    <!-- end row -->
+
+                </section>
+
+                <section id="line7e" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Email Settings & Templates<a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+
+
+                        <h4>Email Config</h4>
+                        <p>Geo POS utilize SMTP protocol to send its all emails including (invoice notifications, user
+                            password reset). You must configure SMTP correctly to send emails. Please do not send
+                            support requests regarding SMTP configuration. It has perfectly tested SMTP integration so
+                            check your server credentials.<br><img src="images/s8.png"
+                                                                   class="img-responsive img-thumbnail"></p>
+                        <h4>Email Templates</h4>
+                        <ol>
+                            <li>You can find in the template section in menu</p></li>
+                            <li>User Password Reset Email.<p>yourproject/application/controllers/User.php</p></li>
+                            <li>Project Manager Notifications.<p>yourproject/application/models/Projects_model.php</p>
+                            </li>
+                        </ol>
+
+
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <section id="line8" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Support Desk <a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Please remember you have purchased a very affordable application and you have not paid
+                                for a
+                                full-time web design agency. Occasionally we will help with small tweaks, but these
+                                requests will be put on a lower priority due to their nature. Support is also 100%
+                                optional and we provide it for your connivance, so please be patient, polite and
+                                respectful.</p>
+
+                            <p>Please visit the  ultimatekode helpdesk and ask question <a href="http://helpdesk.ultimatekode.com">http://helpdesk.ultimatekode.com</a>
+                            </p>
+                            <p>  Enter a valid email to receive ticket replies. Gmail is recommended for reliable communication. Email maybe found in SpamBox after 5 minutes (whitelist helpdesk@ulimatekode.com). If you are not receiving emails means you will not get reply notifications.</p>
+
+                            <strong>Support for our items includes:</strong>
+                            <ul>
+                                <li>* Responding to questions or problems regarding the item and its features</li>
+                                <li>* Fixing bugs and reported issues</li>
+                                <li>* Providing updates to ensure compatibility with new software versions</li>
+                            </ul>
+                            <strong>Item support does not include:</strong>
+                            <ul>
+                                <li>* Customization and installation services</li>
+                                <li>* Support for third party software and plug-ins</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <strong>Before seeking support, please...</strong>
+                            <ul>
+                                <li>* Make sure your question is a valid application Issue and not a customization
+                                    request.
+                                </li>
+                                <li>* Make sure you have read through the documentation before asking support on how to
+                                    accomplish a task.
+                                </li>
+                                <li>* Make sure to double check the application FAQs.</li>
+                                <li>* Try disabling any active plugins to make sure there isn't a conflict with a
+                                    plugin. And if there is this way you can let us know.
+                                </li>
+                                <li>* If you have customized your application and now have an issue, back-track to make
+                                    sure you didn't make a mistake. If you have made changes and can't find the issue,
+                                    please provide us with your changelog.
+                                </li>
+                                <li>* Almost 80% of the time we find that the solution to people's issues can be solved
+                                    with a simple "Google Search". You might want to try that before seeking support.
+                                    You might be able to fix the issue yourself much quicker than we can respond to your
+                                    request.
+                                </li>
+                                <li>* Make sure to state the name of the application you are having issues with when
+                                    requesting support via CodeCanyon.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <!-- end section -->
+
+                <section id="line9" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Files & Credits <a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <strong>Included Libraries</strong>
+
+                            <p>I am not the only person who wrote these codes. I used several open source projects. My
+                                special
+                                thanks to thousands of open source community members, I can't mention their names but,
+                                all who
+                                contributed to these communities. I've used the following libraries, icons or other
+                                files as listed. These are the primary library files used for design the application.
+                                Use these to customize your application even further. </p>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="https://codeigniter.com/">Codeigniter Framework</a></td>
+
+
+                                </tr>
+                                <tr>
+                                    <td><a href="https://jquery.com/">jQuery Library</a></td>
+
+
+                                </tr>
+                                <tr>
+                                    <td><a href="http://getbootstrap.com/">Bootstrap Library</a></li></td>
+
+
+                                </tr>
+
+
+                                <tr>
+                                    <td><a href="http://pixinvent.com/">robust bootstrap template</a></td>
+
+
+                                </tr>
+                                <tr>
+                                    <td><a href="https://github.com/PHPMailer/PHPMailer">PHP Mailer</a></li></td>
+
+
+                                </tr>
+                                <tr>
+
+                                    <td><a href="http://morrisjs.github.io/morris.js/" target="_blank">Morris Chart</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://colebemis.com/feather/" target="_blank">Feather</a></td>
+
+                                </tr>
+                                <tr>
+                                    <td><a href="http://ionicons.com/" target="_blank">Ionicons</a></td>
+
+                                </tr>
+                                <tr>
+
+                                    <td><a href="https://blog.fps.hu/274-vector-line-icons-for-free/" target="_blank">FPS
+                                        Line Icons</a></td>
+                                </tr>
+                                <tr>
+
+                                    <td><a href="https://icomoon.io/#preview-free" target="_blank">IcoMoon</a></td>
+                                </tr>
+                                <tr>
+
+                                    <td><a href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a></td>
+                                </tr>
+                                <tr>
+
+                                    <td><a href="http://www.alessioatzeni.com/meteocons/" target="_blank">Meteocons</a>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td><a href="http://evil-icons.io/" target="_blank">Evil Icons</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- end section -->
+
+                <section id="line10" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Version History (Changelog) <a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <p>You can find the version history (changelog.txt) file on documentation folder
+                            <p>Once again, thank you so much for purchasing this application. As I said at the
+                                beginning, I'd be glad to help you if you have any questions relating to this
+                                application. No guarantees, but I'll do my best to assist. If you have a more general
+                                question relating to the application on Codecanyon, you might consider visiting the
+                                forums and asking your question in the "Item Discussion" section.</p>
+
+                            <hr>
+
+                            <h4>Changelog</h4>
+
+                            <pre class="brush: html">
+--- Changelog -----
+Change Log v 3.5 b55 - Manual Update
+[ This is a manual  update please watch the update video or read the update guide ]
+  https://youtu.be/v-7fZn449tc
+
+ - Update : Codeigniter & all libraries updated to support PHP 7.3 better
+ - Update mechanism improved
+ - Code enhanced
+ - PayPal Payment Gateway Updated:  Redirect to PayPal.com instead on on page card data
+ - PDF temp directory Changed to the userfiles/temp/pdf
+
+
+Change Log v 3.6 b54 - Auto Web Update
+ - Added: Account Type Added : Assets, Expenses, Income, Liabilities, Equity
+ - Added: BalanceSheet Structure Improved
+ - Added: Date Filter Search Added at all invoices,quotes etc pages
+ - Added: Status Search Added at all invoices,quotes etc pages to filter the records
+ - Added: Stock Section Product Search Improved
+ - Added: New Fresh Installation has a new option - database number systems 0.00 to 0.0000
+
+
+Change Log v 3.5 b51 - Auto Web Update
+ - Added: Data Export Added to Sales module - pos, standard invoices,quotes & subscriptions
+ - Added: Data Export Added to Stock module -purchase orders,stock return
+ - Added: Data Export Added to Project module
+ - Added: Data Export Added to Promo,Miscellaneous module
+ - Added: Data Export Added to HRM module
+ - Added: Stock Transfer Reports Added CategoryWise
+ - Added: Stock Transfer Reports Added WarehouseWise - 
+ - Added: Enable Application Development Mode Added to settings
+ - Added: Add New Products to multiple warehouses
+ - Purchase Order Multi Currency Improved
+ - Some print issues for Stock Return Fixed
+ - Reports Improved For Master Locations when the data sharing is off
+ - Customer Delete Improved
+ - Image Upload & Dimensions Improved
+ - Employee Role Id Edit Added
+
+Change Log v 3.4 b47 - Auto Web Update
+ - Vertical Menu is added as requested by many users Settings>Templates
+ - Stock Return Improved
+ - Menu Improved
+
+Change Log v 3.3 b45 - Auto Web Update
+ - New Transactions Email Alert Added
+ - Transactions Delete Email Alert Added
+ - Invoice Delete Email Alert Added
+ - Extra Discount Added Invoices with POS
+ - {Name} Varriable added for email templates
+ - Custom Field added for products
+ - Enable/Disbale Custom Field Button Added
+ - Menu Improved
+ - RTL POS Improved
+
+Change Log v 3.2 b44 - Auto Web Update
+- Dual Entry Accounting Added - ADVANCED SETTINGS>Dual     Entry Accounting
+  Dual Entry Accounting Added to Transactions,Invoices,Purchase Orders
+
+- Location Added to header
+
+- Multiple Location Feature Improved - you can exclude the    master location data
+  BUSINESS SETTINGS>Company Settings
+
+- Reverse Currency Applied for Purchase Orders
+
+- Location Delete Issue Fixed
+
+- POS Screen Search Improved
+
+- Minor Improvements
+
+
+Change Log v 3.1 b42 - Auto Web Update
+- Simple Invoice Based Commission Added for employees - Reports->Summary Reports
+- Employee digitation removed from Invoices print template
+- TextLocal SMS gateway added - need to activated in code
+- Clockwork SMS gateway added - need to activated in code
+- Any Generic REST Based SMS gateway can be added - need to activated in code
+- Product Report Improved
+- POS V2 Delete Row Fixed
+- Settings Menu Issue Fixed for Firefox
+- Minor Improvements
+
+Change Log v 3.0 b39 - Auto Web Update
+- Due Client List Added in CRM Section
+- Product Report Improved
+- POS V2 Delete Row Fixed
+- Settings Menu Issue Fixed for Firefox
+- Minor Improvements
+
+Change Log v 2.9 b37
+- Complete Employee Section Redesigned
+- Minor Improvements
+- New Features will be released in next update - as per your suggestions
+
+Change Log v 2.8 b36
+- Mega Internal Code Enhancement for upcoming features 
+- Invoice & POS Round Added - Localization > Currency Settings
+- Multi-Currency Feature Improved - Conversion Added for Busine Branches, 
+- Reverse Multi-Currency Applied to each module 
+- Client RegisterDate Added for new customers
+- Quote Print Title Improved
+- Stock Reports Improved
+- POS Prefix Added
+- POS RoundOff Added
+
+
+Change Log v 2.7 b35
+- Payment Processing Module Rewritten to maintain current security standards
+- Stripe Payment Process Update to token Based v3 - Review its settings if you are using it.
+- 2Checkout Payment Gateway Added
+- PayUMoney Payment Gateway Added
+- RazorPay Payment Gateway Added
+- New Invoice Print Template Added
+- New Print Style Applied for all modules including  Quotes, Stock Return, Purchase Orders
+- Switch Invoice Print Template Added - Settings > Templates
+- Invoice Print Template Printing Path Compatibility Improved
+- POS Card Payment Mechanism Improved
+- Minor tweaks
+
+-*NOTE*: Please do a manual update(via update_guide) as this update size is very huge and it can not be automatic updated over web due to a technical limitations.  
+
+Change Log v 2.6 b34
+- Most Awaited Feature Custom Fields for Customer Added - More Coming
+- Menu Items Rearranged
+- Cron Job Section Improved
+- Minor tweaks
+
+Change Log v 2.5 b33
+- Customer Sign Up Option Added (Settings>CRM Settings)
+- Email to the customer when employee register a customer
+- Reverse Currency Added For Quotes
+- Customer Address Self Update Added in Customer Login
+- Unique Email Restriction Applied for Customer Registrations
+- Custom fields for the customer in the next update
+- Minor tweaks
+
+
+Change Log v 2.4 b32
+- Product Sales Statement Added
+- Product Purchase Statement Added
+- Product Stock Edit/Transfer Statement Added
+- Standard Invoice Edit Improved
+- Total Discount Info Added to Customer details
+- Zero Stock Billing to use products as service.
+- Language files updated
+- Small tweaks
+
+Change Log v 2.3   b30
+- Code EAN13, ISBN, ISSN, UPCA, EAN8, C128A, C39 Support Added
+- BarCode Print Improved 
+- Product Label Print Added 
+- Customer Group Discount Added
+- Employee Clock In-Out Added
+- Employee Working Hours Added
+- Employee Self Attendance Added
+- POS Style/Version Switcher Added
+- Employee Quotes Added
+- Employee Projects Added
+- Small tweaks
+
+
+Change Log v 2.2   b30
+- Small tweaks
+- Roadmap for the future new features
+- MySQL 5.6+ note added for installations
+
+Change Log v 2.1b28
+-  Complete Application Inspected & Improved - Performace , Stability & Security
+-  Small Issue Fixed
+-  Intense ReTesting Done for all features
+- -Old users after the update, please go  line 443 and change to config.php
+
+    $config['csrf_protection'] = FALSE; to $config['csrf_protection'] = TRUE;
+--------------------------------------------------------------------------------------------
+Change Log v 2.1
+- New Feature - Default Discount Format
+- New Feature - Default Discount for customer
+- New Feature - Tax for Shipping
+- New Feature - Employee Attendance
+- New Feature - Employee Holidays
+-  Improvement - HRM Section
+-  POS Small Twaeks
+-  Many Small Twaeks
+
+Change Log v 2.0
+- New Feature - New POS Panel
+- New Feature - POS Header Show/Hide
+- New Feature - POS Keyboard Shortcuts Added
+- New Feature - POS One Click Pay & Print Added
+- New Feature - Currency Exchange Reverse Added for standard invoices 
+- Improvement - Default Warehouse Feature Improved
+- Improvement - Product Import has now auto barcode generation
+- Improvement - Old POS Panel renamed as v2 
+
+Change Log v 1.9
+- New Feature - Product Expiry and Email Alert Added
+- New Feature - Default Warehouse Added
+- New Feature - Advanced Printing Added For Thermal Printers
+- Improvement - POS section you can search the product by code
+- Improvement - POS section barcode gun search improved
+- Improvement - POS section barcode gun search improved
+- Improvement - POS section design
+- Improvement - Customer document id and extra field added
+- Improvement - Transfers between warehouses, search by name,code added
+
+Change Log v 1.8
+- New Feature - Standard HRM Module
+- New Feature - Employee Payroll & Salary
+- New Feature - Employee Department
+- New Feature - Holidays added for upcoming Attendance System 
+- New Feature - Customer login language added
+- New Feature - Notes for customer added
+- New Feature - Documents for customer added
+- New Feature - Customer View Section Shortcut Account Statement
+- New Feature - Customer View Section Shortcut Quotes
+- New Feature - Customer View Section Shortcut Projects
+- New Feature - Customer View Section Shortcut Subscriptions
+- New Feature - Customer Data View Permission Added
+- New Feature -  Credit Note Added
+- New Feature - New Transaction-  search for suppliers added
+- New Feature - Auto Database backup cron added
+- New Feature - Activity Log Added
+- Improved- Customer View Section
+
+Change Log v 1.7
+- Project Manager Improved
+- New permissions added to Assign Project
+- Invoice Improved
+- Location Warehouse And Product View Improved
+--------------------------------------------------------------------------------------------
+Change Log v 1.6
+- Draft Section Improved
+- GST Invoice Improved
+- Stock transfer Improved
+
+Change Log v 1.5
+- Auto WebUpdate Wizard Added
+- Big Improvements in product section
+- Stock Transfer with split qty added
+- Stock Return for Customer Added
+- Minor Improvements
+
+Change Log v 1.4
+- Dashboard data filterd sub-locations
+- TAX Slabs Added- Dedicated TAX Section Added
+- Create Standard Invoices Without adding product to stock
+- Minor Improvements
+---------------------------------------------
+Change Log v 1.3
+- Local POS Print Server Support Added
+- Printer Config GUI Added
+- Location Restrictions Added on All sections
+-----------------------------------------
+Change Log v 1.2
+- Sales Summary Report  Added
+- Products Sales Summary Report  Added
+- Product Stock Alert Added
+- Product variations added
+- Total Due Calculation Added for Customer
+- Invoice creation disabled for 0 qty items
+- Graphical Report Section Added
+- Product Categories Graphical Reports
+- Trending Products Graphical Reports
+- Profit Graphical Reports
+- Customer Graphical Reports
+- Income vs Income Graphical Reports
+- Form Validation Improved
+----------------------------------------------------------------------------------------------
+Change Log v 1.1
+- Employee Custom Permissions Added
+- Auto Email-SMS Feature Added
+- Settings Menu Improved
+- Product variations added
+- Customer Import Improved
+- Accounts Linked to Business Location
+- Warehouses Linked to Business Location
+- GST Exclusive & GST Inclusive Added
+- Profit Modules Added
+- Translation files updated
+- Quote for GST improved
+--------------------------------------------------------------------------------------------
+Change Log v 1.0
+- Initial Release 
+--------------------------------------------------------------------------------------------
+     </pre>
+
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </section>
+
+                <!-- end section -->
+                <section id="line11" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Application Flow Chart<a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                        <div class="section" id="application-flow-chart">
+
+<p>The following graphic illustrates how data flows throughout the system:</p>
+<p> <img src="images/appflowchart.gif" alt="" class="img-responsive img-thumbnail"></p>
+<ol class="arabic simple">
+<li>The index.php serves as the front controller, initializing the base
+resources needed to run CodeIgniter.</li>
+<li>The Router examines the HTTP request to determine what should be done
+with it.</li>
+<li>If a cache file exists, it is sent directly to the browser, bypassing
+the normal system execution.</li>
+<li>Security. Before the application controller is loaded, the HTTP
+request and any user submitted data is filtered for security.</li>
+<li>The Controller loads the model, core libraries, helpers, and any
+other resources needed to process the specific request.</li>
+<li>The finalized View is rendered then sent to the web browser to be
+seen. If caching is enabled, the view is cached first so that on
+subsequent requests it can be served.</li>
+</ol>  <small>Image & Data Credits: https://www.codeigniter.com/user_guide/</small>
+</div>
+
+
+                    </div>
+
+                </section>
+                 <section id="line12" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Application Flow Chart<a href="#top">#back to top</a>
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                     <div class="section" id="model-view-controller">
+<h1>Model-View-Controller<a class="headerlink" href="#model-view-controller" title="Permalink to this headline">¶</a></h1>
+                         <p>Geo POS is based on the <strong>CodeIgniter Framework (www.codeigniter.com) </strong>  Model-View-Controller development pattern.
+MVC is a software approach that separates application logic from
+presentation. In practice, it permits your web pages to contain minimal
+scripting since the presentation is separate from the PHP scripting.</p>
+<ul class="simple">
+<li>The <strong>Model</strong> represents your data structures. Typically your model
+classes will contain functions that help you retrieve, insert, and
+update information in your database.</li>
+<li>The <strong>View</strong> is the information that is being presented to a user. A
+View will normally be a web page, but in Geo POS, a view can also
+be a page fragment like a header or footer. It can also be an RSS
+page, or any other type of “page”.</li>
+<li>The <strong>Controller</strong> serves as an <em>intermediary</em> between the Model, the
+View, and any other resources needed to process the HTTP request and
+generate a web page.</li>
+</ul>
+<p>Geo POS has a fairly loose approach to MVC since Models are not
+required. If you don’t need the added separation, or find that
+maintaining models requires more complexity than you want, you can
+ignore them and build your application minimally using Controllers and
+Views. Geo POS also enables you to incorporate your own existing
+scripts, or even develop core libraries for the system, enabling you to
+work in a way that makes the most sense to you.</p>
+</div>
+  <small>Image & Data Credits: https://www.codeigniter.com/user_guide/</small>
+
+                    </div>
+
+                </section>
+            </div>
+            <!-- // end .col -->
+
+        </div>
+        <!-- // end .row -->
+
+    </div>
+    <!-- // end container -->
+
+</div>
+<!-- end wrapper -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/retina.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+
+<!-- CUSTOM PLUGINS -->
+<script src="js/custom.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/syntax-highlighter/scripts/shCore.js"></script>
+<script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+<script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+<script src="js/syntax-highlighter/scripts/shBrushPhp.js"></script>
+
+</body>
+
+</html>

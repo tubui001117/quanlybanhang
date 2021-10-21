@@ -1,0 +1,10 @@
+$lang['Business'] = "Business";
+$lang['Master'] = "Master";
+$lang['Registration'] = "Registration";
+$lang['Location'] = "Location";
+$lang['Advanced'] = "Advanced";
+$lang['Localisation'] = "Localisation";
+$lang['Custom'] = "Custom";
+$lang['Field'] = "Field";
+$lang['Fields'] = "Fields";
+$lang['Location'] = "Location";

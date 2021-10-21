@@ -1,0 +1,1 @@
+ALTER TABLE `geopos_currencies` CHANGE `rate` `rate` DECIMAL(10,5) NOT NULL;

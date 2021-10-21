@@ -1,0 +1,1 @@
+ALTER TABLE `geopos_accounts` ADD `account_type` ENUM('Assets','Expenses','Income','Liabilities','Equity','Basic') NOT NULL DEFAULT 'Basic' AFTER `loc`;

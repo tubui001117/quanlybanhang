@@ -1,0 +1,1 @@
+ALTER TABLE `geopos_project_meta` ADD `key4` INT(11) NOT NULL DEFAULT '0' AFTER `key3`;

@@ -1,0 +1,4 @@
+$lang['Round Off'] = "Round Off";
+$lang['Commission'] = "Commission";
+$lang['Wage'] = "Wage";
+$lang['Hour'] = "Hour";

@@ -1,0 +1,7 @@
+$lang['Edit Tax Details']='Edit Tax Details';
+$lang['Auto Email SMS']='Auto Email SMS';
+$lang['Auto Email Send']='Send automatic Email and SMS during invoice creation. Please do not enable this feature unnecessarily, it may slow the invoice creation process as application will connect to email and sms server.';
+$lang['Profit']='Profit';
+$lang['Variations']='Variations';
+$lang['Variables']='Variables';
+$lang['Permissions']='Permissions';

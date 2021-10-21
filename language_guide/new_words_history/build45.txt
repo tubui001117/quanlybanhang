@@ -1,0 +1,4 @@
+$lang['Dual Entry'] = "Dual Entry";
+$lang['Accounting'] = "Accounting";
+$lang['Automated Email'] = "Send automatic Email . Please do not enable this feature unnecessarily, it may slow the process as the application will connect to email server.";
+$lang['Alert'] = "Alert";

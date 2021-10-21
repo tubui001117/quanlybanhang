@@ -1,0 +1,16 @@
+$lang['add_row'] = "Add Row";
+$lang['serial'] = "Product Serial";
+$lang['product_search_settings'] = "Product Search Setting";
+$lang['search_serial_only'] = "Search With Only Serial";
+$lang['search_serial_with'] = "Search With Serial";
+$lang['search_default'] = "Default - Search Without Serial";
+$lang['search_serial_with_not_available'] = "Search With Serial is partially available in POS Search as it conflict with barcode. You can search the products with serials but can not use serial number to search. Use search With Only Serial Or Default - Search Without Serial";
+$lang['add_serial'] = "Add Serial Row";
+$lang['delete_serial'] = "Delete Serial";
+$lang['multi_unit'] = "Multi Unit";
+$lang['base_unit'] = "Base Unit";
+$lang['disable_expired_products'] = "Disable expired products search";
+$lang['standard_label'] = "Standard Label";
+$lang['billing_settings'] = " Billing Settings";
+$lang['custom_label'] = " Custom Label";
+$lang['Customer_approved'] = " Customer approved";

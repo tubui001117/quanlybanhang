@@ -1,0 +1,1 @@
+INSERT INTO `univarsal_api` (`id`, `name`, `key1`, `key2`, `url`, `method`, `other`, `active`) VALUES (69, 'pos_settings', '1', NULL, NULL, NULL, NULL, NULL);

@@ -1,0 +1,1 @@
+ALTER TABLE `geopos_system` ADD `foundation` DATE NULL DEFAULT NULL AFTER `lang`;

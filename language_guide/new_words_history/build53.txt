@@ -1,0 +1,4 @@
+$lang['Basic'] = "Basic";
+$lang['Assets'] = "Assets";
+$lang['Liabilities'] = "Liabilities";
+$lang['Equity'] = "Equity";

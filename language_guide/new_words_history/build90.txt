@@ -1,0 +1,7 @@
+$lang['Convert to Purchase'] = "Convert to Purchase Order";
+$lang['Transaction Categories Statement'] = "Transaction Categories Statement";
+$lang['Employee Account Statement'] = "Employee Account Statement";
+$lang['Bulk Payment'] = "Bulk Payment";
+$lang['Bulk Payment Invoices'] = "Bulk Payment Invoices";
+$lang['Bulk Payment Info'] = "It will make Payment for all invoices between these dates, remaining extra payment will be discarded.";
+$lang['Supplier Bulk Payment Info'] = "It will make Payment for all invoices between these dates, remaining extra payment will be avoided with an alert.";
